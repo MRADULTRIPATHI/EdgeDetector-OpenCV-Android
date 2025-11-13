@@ -278,19 +278,6 @@ git commit -m "feat: Create TypeScript web viewer"
 git commit -m "docs: Add comprehensive README"
 ```
 
-## 🚀 Future Enhancements
-
-- [ ] WebSocket server for real-time frame streaming
-- [ ] Additional edge detection algorithms (Sobel, Laplacian)
-- [ ] Adjustable Canny thresholds via UI
-- [ ] Video recording of processed output
-- [ ] Multi-camera support
-- [ ] Advanced GLSL shader effects
-
-## 📄 License
-
-MIT License - Feel free to use for learning and development.
-
 ## 👤 Author
 
 Mradul Tripathi
