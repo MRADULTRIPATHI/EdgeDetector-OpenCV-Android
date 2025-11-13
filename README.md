@@ -293,8 +293,4 @@ MIT License - Feel free to use for learning and development.
 
 ## 👤 Author
 
-RnD Intern Assessment Project
-
----
-
-**Note**: This is a technical assessment project demonstrating integration skills across Android, C++, OpenGL, and TypeScript. Focus is on architecture and integration rather than UI polish.
+Mradul Tripathi
