@@ -6,10 +6,11 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 # Set OpenCV path (user should download OpenCV Android SDK)
-set(OPENCV_DIR ${CMAKE_SOURCE_DIR}/../../../../../opencv-sdk)
+set(OPENCV_ANDROID_SDK ${CMAKE_SOURCE_DIR}/../../../../opencv-sdk)
+set(OpenCV_DIR "${OPENCV_ANDROID_SDK}/sdk/native/jni")
 
 # Find OpenCV package
-find_package(OpenCV REQUIRED PATHS ${OPENCV_DIR}/sdk/native/jni)
+find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
