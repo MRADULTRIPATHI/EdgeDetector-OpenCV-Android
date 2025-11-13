@@ -1,0 +1,16 @@
+{
+  "name": "edge-detector-web-viewer",
+  "version": "1.0.0",
+  "description": "Web viewer for Edge Detector processed frames",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

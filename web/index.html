@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detector - Web Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Edge Detector Web Viewer</h1>
+            <p class="subtitle">Real-time frame processing visualization</p>
+        </header>
+
+        <main>
+            <div class="viewer-section">
+                <h2>Processed Frame</h2>
+                <div class="frame-container">
+                    <canvas id="frameCanvas" width="640" height="480"></canvas>
+                    <div class="overlay" id="noFrameOverlay">
+                        <p>No frame loaded</p>
+                        <button id="loadSampleBtn">Load Sample Frame</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2>Frame Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Resolution</span>
+                        <span class="stat-value" id="resolution">640 x 480</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">FPS</span>
+                        <span class="stat-value" id="fps">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Processing Time</span>
+                        <span class="stat-value" id="processingTime">0 ms</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Frame Count</span>
+                        <span class="stat-value" id="frameCount">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <h2>Controls</h2>
+                <div class="control-group">
+                    <label for="base64Input">Base64 Frame Data:</label>
+                    <textarea id="base64Input" placeholder="Paste base64-encoded frame data here..." rows="4"></textarea>
+                    <button id="loadBase64Btn">Load from Base64</button>
+                </div>
+                <div class="control-group">
+                    <label for="fileInput">Or upload image file:</label>
+                    <input type="file" id="fileInput" accept="image/*">
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>About</h2>
+                <p>This web viewer displays processed frames from the Edge Detector Android app. 
+                   It demonstrates the integration between native Android processing (OpenCV C++) 
+                   and web-based visualization.</p>
+                <ul>
+                    <li>✅ TypeScript-based implementation</li>
+                    <li>✅ Canvas rendering for frame display</li>
+                    <li>✅ Real-time statistics tracking</li>
+                    <li>✅ Base64 frame data support</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Edge Detector Web Viewer | Built with TypeScript</p>
+        </footer>
+    </div>
+
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
